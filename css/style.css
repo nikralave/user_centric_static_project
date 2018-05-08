@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: font-family: 'Roboto', sans-serif;
+}
+
+/*------------------Navbar---------------------*/
+
+.navbar {
+    margin-bottom: auto;
+
+    color: #ffffff
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
+
+
+.callout {
+    background-image: url("../images/concept_2.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0px;
+    height: 350px;
+    padding-bottom: 0;
+    width: 100%;
+
+}
+
+
+/*------------------Footer---------------------*/
+
+footer {
+    /*background: #000000;*/
+    /*color: #ffffff;*/
+    padding: 20px;
+    /*margin: 0 auto;*/
+}
+
+
+ul.unstyled {
+    list-style: none;
+    padding: 0;
+
+}
+
+ul.unstyled li {
+    display: inline-block;
+    padding-right: 20px;
+
+}
