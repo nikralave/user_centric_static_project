@@ -11,115 +11,145 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default navbar-static-top">
-		<div class="container top">
-
-			<a href="index.html" class="navbar-brand"><span id = "logo">Aoife  @ holidaysplease</span> </a>
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-               <span class = "icon-bar"></span>
-               <span class = "icon-bar"></span>
-               <span class = "icon-bar"></span>
-           </button>
-			<div class="collapse navbar-collapse navHeaderCollapse">
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand"><span id = "logo">Aoife @ holidaysplease</span> </a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+		 <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar">
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="offers.html">Offers</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class = "caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="mystory.html">My Story</a></li>
-							<li><a href="testimonials.html">Testimonials</a></li>
-						</ul>
-						<li><a href="contact.html">Contact Me</a></li>
-
-					</li>
-
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="offers.html">OFFERS</a></li>
+					<li><a href="mystory.html">MY STORY</a></li>
+					<li><a href="testimonials.html">TESTIMONIALS</a></li>
+					<li><a href="contact.html">CONTACT ME</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class=" callout jumbotron jumbotron-fluid" id="first">
+	<div class="container-fluid callout-container">
+		<div class="opaque-overlay">&nbsp;</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<section class="callout jumbotron">
+					<div class="cta-first">Escape</div>
+					<div class="cta-second hidden-xs"><span>to a world of relaxation </span></div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="container header">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>YOUR JOURNEY BEGINS RIGHT HERE</h2>
+				<h3>Latest Destination Offers</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 offer">
+				<img class="img-responsive destination" src="images/maldives.jpg" alt "Maldives">
+				<div class="offer-overlay">Maldives</div>
+				<h3>Maldives</h3>
+			</div>
+			<div class="col-md-4 offer">
+				<img class="img-responsive destination" src="images/NYC.jpg" alt "New York">
+				<div class="offer-overlay">New York</div>
+				<h3>New York</h3>
+			</div>
+			<div class="col-md-4 offer">
+				<img class="img-responsive destination" src="images/bali.jpg" alt "Bali">
+				<h3>Bali</h3>
+				<div class="offer-overlay">Bali</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 offer">
+				<img class="img-responsive destination" src="images/dubai.jpg" alt "Dubai">
+				<div class="offer-overlay">Dubai</div>
+				<div class="div">
+					<h3>Dubai</h3>
+				</div>
+			</div>
+
+			<div class="col-md-4 offer">
+				<img class="img-responsive destination" src="images/thailand.jpg" alt "Thailand">
+				<div class="offer-overlay">Thailand</div>
+				<h3>Thailand</h3>
+			</div>
+			<div class="col-md-4 offer">
+				<img class="img-responsive destination" src="images/california.jpg" alt "California">
+				<h3>California</h3>
+				<div class="offer-overlay">California</div>
+			</div>
+		</div>
+	</div>
+	
 		<div class="container">
-			<h1 class="display-3">Sandals 2 for 1 Sale</h1>
-			<p class="lead">Half price luxury holidays</p>
-		</div>
-	</div>
-<div class="container">
-	<div class="row">
-		<div class="col-xs-4 col-xs-offset-4">
-			<h2>Latest Offers</h2>
-		</div>
-	</div>
-</div>
-	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6">
-				<div class="two_across">
-					<h3>5* Palm Jumeirah, Dubai</h3>
-					<div class="slide">
-					<img class="img-responsive imageslide" src="images/dubai.jpg">
-					<div class="overlay">
-						<div class="text"><p class = "text-justify">Enjoy the mini heat wave last week and in need to some guaranteed sun on your skin again? Check out this fantastic offer for the hottest hotel in Dubai. The perfect excuse for a quick break in luxurious surroundings.</div>
-					</div>
-				</div>
-					
-				</div>
-			</div>
-
-
-			<div class="col-xs-12 col-sm-6">
-				<div class="two_across">
-					<h3>California, Highlights</h3>
-					<img class="img-responsive" src="images/la.jpg">
-					<p class = "text-justify">Enjoy the mini heat wave last week and in need to some guaranteed sun on your skin again? Check out this fantastic offer for the hottest hotel in Dubai. The perfect excuse for a quick break in luxurious surroundings. 5* FIVE Palm Jumeirah, Dubai
-						Includes Return flights 3 nights in a Superior Room with HALF BOARD Return private transfers SAVE up to £320 per person London departures from £629 per person Manchester departures from £649 per person Glasgow departures from £688 per person</p>
-				</div>
-
-
+			<div class="col-xs-12 book">
+				<a href="contact.html" class="booking"> Booking Enquiries</a>
 			</div>
 		</div>
+	</div>
+	<div class="container header">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>GET INSPIRED</h2>
+			</div>
+		</div>
+	</div>
 
-	</div>
-	</div>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-6">
-				<div class ="two_across">
-				<h3>Check out my journey</h3>
-				<img class="img-responsive" src ="images/journey.jpg" alt ="my journey">
-					<p class = "text-justify">Enjoy the mini heat wave last week and in need to some guaranteed sun on your skin again? Check out this fantastic offer for the hottest hotel in Dubai. The perfect excuse for a quick break in luxurious surroundings. 5* FIVE Palm Jumeirah, Dubai
-						Includes Return flights 3 nights in a Superior Room with HALF BOARD Return private transfers SAVE up to £320 per person London departures from £629 per person Manchester departures from £649 per person Glasgow departures from £688 per person</p>
-				</div>
-				</div>
-			
-			<div class="col-xs-12 col-sm-6">
-				<div class="two_across">
-				<h3>Testimonials</h3>
-				<img class="img-responsive" src ="images/testimonial_home.jpg" alt ="my journey">
-					<p class = "text-justify">Enjoy the mini heat wave last week and in need to some guaranteed sun on your skin again? Check out this fantastic offer for the hottest hotel in Dubai. The perfect excuse for a quick break in luxurious surroundings. 5* FIVE Palm Jumeirah, Dubai
-						Includes Return flights 3 nights in a Superior Room with HALF BOARD Return private transfers SAVE up to £320 per person London departures from £629 per person Manchester departures from £649 per person Glasgow departures from £688 per person</p>
-				</div>
-				</div>
+		<div class="row divider_box">
+			<div class="col-md-5 layout">
+				<img class="img-responsive" src="images/journey.jpg" alt="my journey">
 			</div>
-</div>
+			<div class="col-md-7">
+				<h2>About Me</h2>
+				<h4 class="text-justify">I started working in the Travel Industry 15 years ago after returning from backpacking around South East Asia, combining my love for travel with a career always seemed the obvious choice for me.</h4>
+				<h4>As I began to develop my career, a passion to strive for the highest levels of customer service also came to the forefront. Hearing that a customer loved my recommendations for their holiday and wanted to travel again is one of the reasons I find
+					this job so rewarding.</h4>
+				<a href="mystory.html">Find out more</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row divider_box">
+			<div class="col-md-7">
+				<h2>Testimonials</h2>
+				<h4 class="text-justify">"Excellent service as usual. This is the third time we have used Holidays Please and the service and attention to detail we have received is excellent. I cannot say how helpful Aoife has been from our initial enquiry through to booking from searching
+					our requirement to advising on general information. Aoife booked our airport lounge and outbound and return plane seats which really does take the hassle. We would definitely recommend Aoife and Holidays Please, we have already booked our 2019 holiday
+					through Aoife again."</h4>
+				<a href="testimonials.html">Hear from more clients</a>
+			</div>
+			<div class="col-md-5 layout">
+				<img class="img-responsive" src="images/testimonial.jpg" alt="testimonial">
+			</div>
+
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-4 offset-3">
-				<button> Booking Enquiries</button>
-			</div>
-		</div>
-	</div>
+
 
 	<footer>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-
 				<div class="col-sm-4">
 					<h3>Get in touch</h3>
 					<p>+44 1525 599019</p>
@@ -140,14 +170,13 @@
 						<li><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></li>
 						<li><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
 						<li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter fa-3x"></i></a></li>
 					</ul>
 				</div>
 			</div>
-
 		</div>
 
 	</footer>
-
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

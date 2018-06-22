@@ -1,139 +1,290 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Pattaya');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Pattaya');
 
-
+html,
 body {
     font-family: 'Roboto', sans-serif;
-    color: #000000;
+    color: #000080;
+    background-color: #E8F8FD;
 }
 
 
 
-/*------------------Navbar---------------------*/
-.navbar-default {
-    background-color: #ffffff;
-    
-   
-}
-
-.navbar-default .navbar-toggle .icon-bar  {
-    background-color: #000000;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color:#000000;
-}
+/* Navbar */
 
 .navbar {
-    margin-bottom: auto;
-    
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .25);
+    border: 0;
 }
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+
+
+.navbar-default .navbar-nav a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-btn {
+    border: 0;
+    border-radius: 16px;
+    width: 100px;
+    background-color: #f05f40;
+    color: white;
+}
+
+.navbar-btn:hover {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+}
+
 
 #logo {
     font-family: 'Pattaya', sans-serif;
     font-size: 22px;
-    color:#000000;
+    color: #ffffff;
+
+}
+
+
+/*--------------Callout------------------*/
+
+.callout-container {
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.jumbotron {
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 50px;
+    padding-top: 35vh;
+    height: 100vh;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.cta-first {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: showup 7s infinite;
+}
+
+.cta-second {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    animation: reveal 7s infinite;
     
+}
+
+.cta-second span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:510px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:510px;}
+}
+
+/*-----------------------------landing page*/
+
+.header {
+    color:#000080;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.offer {
+  position: relative;
+  text-align:center;
+}
+
+.container {
+    padding: 30px;
 }
 
 
 
+.offer-overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 350px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
 
-.callout {
-    
-    background-repeat: no-repeat;
-    color: white;
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
-    width: 100%;
+.container:hover .offer-overlay {
+  opacity: 1;
+}
 
+
+.divider_box {
+    background-color: #ffffff;
+}
+
+.layout{
+    padding:0;
+}
+
+
+/*-------Other Pages--------------*/
+
+.secondary {
+    background-color: #000080;
+     position: relative;
+}
+
+.head-image {
+    padding-left: 0;
+    padding-right:0;
 }
 
 #first {
     background-image: url("../images/concept_2.jpg");
-    
-}
 
-#second {
-    background-image: url("../images/balloon.jpg");
-    
 }
 
 #third {
     background-image: url("../images/testimonial.jpg");
-    
+
 }
 
 #fourth {
     background-image: url("../images/safari.jpg");
-    
+
 }
+
+
+
+
+
 
 #map {
     width: 90%;
     height: 300px;
 }
 
-.slide {
-  position: relative;
-}
 
 
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #696969;
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-}
-
-.slide:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+.booking {
+    text-align: center;
+    border: solid;
 }
 
 /*------------------Footer---------------------*/
 
 footer {
-    background: gray;
-    /*color: #ffffff;*/
     padding: 20px;
-    /*margin: 0 auto;*/
+   
 }
 
+.footer {
+    text-align: center;
+}
 
 ul.unstyled {
     list-style: none;
-    padding: 0;
 
 }
 
 ul.unstyled li {
     display: inline-block;
     padding-right: 20px;
-    
+
 
 }
 
 ul.unstyled li a {
-   color: 	#888888;
-   
-    
+    color: #000080;
 
 }
-
