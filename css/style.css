@@ -3,9 +3,10 @@
 html,
 body {
     font-family: 'Roboto', sans-serif;
-    color: #000080;
-    background-color: #E8F8FD;
+    color: #002d59;
+    background-color: #f7fbfc;
 }
+
 
 
 
@@ -61,20 +62,33 @@ body {
     color: white;
 }
 
-.navbar-btn {
-    border: 0;
-    border-radius: 16px;
-    width: 100px;
-    background-color: #f05f40;
-    color: white;
-}
+/*.navbar-btn {*/
 
-.navbar-btn:hover {
-    background-color: #df4929;
-    border-color: #df4929;
-    color: white;
-}
+/*    border: 0;*/
 
+/*    border-radius: 16px;*/
+
+/*    width: 100px;*/
+
+/*    background-color: #f05f40;*/
+
+/*    color: white;*/
+
+/*}*/
+
+/*.navbar-btn:hover {*/
+
+/*    background-color: #df4929;*/
+
+/*    border-color: #df4929;*/
+
+/*    color: white;*/
+
+/*}*/
+
+.menu {
+    padding: 0;
+}
 
 #logo {
     font-family: 'Pattaya', sans-serif;
@@ -138,7 +152,7 @@ body {
     white-space: nowrap;
     width: 0px;
     animation: reveal 7s infinite;
-    
+
 }
 
 .cta-second span {
@@ -147,107 +161,155 @@ body {
 }
 
 @keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 @keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:510px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:510px;}
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 510px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 510px;
+    }
 }
 
 /*-----------------------------landing page*/
 
 .header {
-    color:#000080;
     font-weight: bold;
     text-align: center;
 }
 
-
 .offer {
-  position: relative;
-  text-align:center;
+    text-align: center;
 }
 
-.container {
+
+.offer-link {
+    color: #002d59;
+}
+
+.offer-link:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-section {
     padding: 30px;
 }
 
 
 
-.offer-overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 350px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
+/*.offer-overlay {*/
 
-.container:hover .offer-overlay {
-  opacity: 1;
-}
+/*  position: absolute; */
 
+/*  bottom: 0; */
+
+/*  background: rgb(0, 0, 0);*/
+
+/*background: rgba(0, 0, 0, 0.5); Black see-through */
+
+/*  color: #f1f1f1; */
+
+/*  width: 350px;*/
+
+/*  transition: .5s ease;*/
+
+/*  opacity:0;*/
+
+/*  color: white;*/
+
+/*  font-size: 20px;*/
+
+/*  padding: 20px;*/
+
+/*  text-align: center;*/
+
+/*}*/
+
+/*.container:hover .offer-overlay {*/
+
+/*  opacity: 1;*/
+
+/*}*/
 
 .divider_box {
     background-color: #ffffff;
 }
 
-.layout{
-    padding:0;
+.layout {
+    padding: 0;
 }
 
 
 /*-------Other Pages--------------*/
 
 .secondary {
-    background-color: #000080;
-     position: relative;
+    background-color: #002d59;
+    position: relative;
 }
 
 .head-image {
-    padding-left: 0;
-    padding-right:0;
-}
-
-#first {
-    background-image: url("../images/concept_2.jpg");
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
-#third {
-    background-image: url("../images/testimonial.jpg");
+#story {
+    background-image: url("../images/balloon.jpg");
 
 }
 
-#fourth {
-    background-image: url("../images/safari.jpg");
+#contact {
+    background-image: url("../images/contact.jpg");
 
 }
 
 
-
-
-
+.offer-desc {
+    background-color: #ffffff;
+    text-align: left;
+}
 
 #map {
     width: 90%;
@@ -257,23 +319,65 @@ body {
 
 
 .booking {
-    text-align: center;
+    background-color: #ffffff;
+    border-color: #002d59;
     border: solid;
+    color: #002d59;
+    padding: 0.75em 1.0em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+a.booking:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #002d59;
+}
+
+
+.enquire {
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+}
+.speech-bubble {
+    background: #ffffff;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 1em;
+    position: relative;
+    vertical-align: top;
+    min-width: 7em;
+    border-radius: .4em;
+}
+
+.speech-bubble:after {
+    border: 1em solid transparent;
+    border-top-color: #ffffff;
+    content: '';
+    margin-left: -1em;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    width: 0;
+    height: 0;
+}
+
 
 /*------------------Footer---------------------*/
 
 footer {
     padding: 20px;
-   
+    background-color: #002d59;
+    color: #ffffff;
+
 }
 
-.footer {
-    text-align: center;
-}
+
 
 ul.unstyled {
     list-style: none;
+    padding-left: 0;
 
 }
 
@@ -285,6 +389,7 @@ ul.unstyled li {
 }
 
 ul.unstyled li a {
-    color: #000080;
+    color: #ffffff;
+
 
 }
